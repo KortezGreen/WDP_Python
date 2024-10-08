@@ -55,7 +55,51 @@ print(((7*pi)/12) * (180 / pi))
 
 
 print('\nĆw 6')
+Lb_bi = ["10", "111", "101011", "1101", "10000", "11100"]
+Lb_dz = [int(b, 2) for b in Lb_bi]
+print(Lb_dz)
 
+Lb_dz2 = [64, 28, 12, 1235, 29649, 8912556]
+lb_bi2 = [bin(d)[2:] for d in Lb_dz2]
+print(lb_bi2)
+
+for os in ['71', '2375', '16230', '777', '11111', '74367']:
+    print(f"{os} (ósemkowo) = {sum(int(os[i]) * (8 ** (len(os) - 1 - i)) for i in range(len(os)))} (dziesiętnie)")
+
+for os in ['71', '2375', '16230', '777', '11111', '74367']:
+    dz = sum(int(os[i]) * (8 ** (len(os) - 1 - i)) for i in range(len(os)))
+    print(f"{os} (ósemkowo) = {dz} (dziesiętnie)")
+
+for dz in [64, 512, 273, 918, 90860, 5968939]:
+    os = ''
+    while dz > 0:
+        os = str(dz % 8) + os
+        dz //= 8
+    print(f"{dz} (dziesiętnie) = {os} (ósemkowo)")
+
+for hex_num in ['12F', '7682', 'A3561', '99', 'AB12C', '341D']:
+    dz = sum(int(hex_num[i], 16) * (16 ** (len(hex_num) - 1 - i)) for i in range(len(hex_num)))
+    print(f"{hex_num} (szesnastkowo) = {dz} (dziesiętnie)")
+
+for dz in [60, 123, 256, 147178, 870, 7450091]:
+    hex_num = ''
+    while dz > 0:
+        hex_num = '0123456789ABCDEF'[dz % 16] + hex_num
+        dz //= 16
+    print(f"{dz} (dziesiętnie) = {hex_num} (szesnastkowo)")
+
+for bin_num in ['10000', '101', '100011', '1101', '101100', '11']:
+    dz = sum(int(bit) * (2 ** (len(bin_num) - 1 - i)) for i, bit in enumerate(bin_num))
+    hex_num = ''
+    while dz > 0:
+        hex_num = '0123456789ABCDEF'[dz % 16] + hex_num
+        dz //= 16
+    print(f"{bin_num} (binarne) = {hex_num} (szesnastkowo)")
+
+for hex_num in ['F', '2C', 'AF1', '147', '8', '3B11', '16']:
+    dz = sum(int(hex_num[i], 16) * (16 ** (len(hex_num) - 1 - i)) for i in range(len(hex_num)))
+    bin_num = bin(dz)[2:]
+    print(f"{hex_num} (szesnastkowo) = {bin_num} (binarne)")
 
 
 print('\nĆw 7')
