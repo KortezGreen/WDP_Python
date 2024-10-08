@@ -32,4 +32,4 @@ print('\nĆw 7')
 print('cena towaru to:',((670*0.6)*1.4))
 print('liczba znaczków:',((185*2)+(217*2)))
 print('Zapłacił:',((8*15)+(4*14)))
-
+print('Liczba skrzynek III:',(((8*15)+(4*14)))//11)
