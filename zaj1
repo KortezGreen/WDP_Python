@@ -27,6 +27,21 @@ print((5+2*(6**(1/2)))**(1/2)-(1/(5+2*(6**(1/2)))**(1/2)))
 print('\nĆw 4')
 pi=3.14151926
 e=2.718281828
+print(25*pi)
+print(pi*pi)
+print((18*e)+pi)
+print(e*(pi+2))
+print((12*e)**1/2)
+print(e-pi)
+print(pi/(e*e))
+print(2**(1/2))
+print((pi)**1/2)
+
+print('\nĆw 5')
+
+
+print('\nĆw 6')
+
 
 print('\nĆw 7')
 print('cena towaru to:',((670*0.6)*1.4))
