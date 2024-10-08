@@ -37,10 +37,25 @@ print(pi/(e*e))
 print(2**(1/2))
 print((pi)**1/2)
 
+
 print('\nĆw 5')
+print(105 * (pi / 180))
+print(35 * (pi / 180))
+print(45 * (pi / 180))
+print(185 * (pi / 180))
+print((-95) * (pi / 180))
+print(712 * (pi / 180))
+
+print(((2*pi)/3) * (180 / pi))
+print(((-pi)/4) * (180 / pi))
+print(((5*pi)/6) * (180 / pi))
+print(((45*pi)/30) * (180 / pi))
+print((e*pi) * (180 / pi))
+print(((7*pi)/12) * (180 / pi))
 
 
 print('\nĆw 6')
+
 
 
 print('\nĆw 7')
