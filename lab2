@@ -1,1 +1,112 @@
 
+print('Cw1\n')
+
+print('Cw2\n')
+var1 = 2
+var2 = 3
+var1 = var1+2
+var3 = var1
+var1 *= 3
+var4 = var1/var2
+
+print('Cw3\n')
+# a
+age = int(input("Wprowadz swoj wiek: "))
+if age >= 18:
+    print("Autoryzacja uzyskana"):
+    print("Odmowa")
+
+# b
+a = int(input("Wprowadz liczbe:"))
+if a > 0:
+    print("|a|=", a)
+else:
+    print("|a|=", -a)
+
+# c
+a = 50
+b = 10
+if a>b:
+    print("Hello World")
+
+# d
+a = int(input("Wprowadz liczbe:"))
+if a%2==0:
+    print('Parzysta')
+else:
+    print('Nieparzysta')
+
+# e
+a = float(input("Liczba a: "))
+b = float(input("Liczba b: "))
+if a>b:
+    print(a)
+else:
+    print(b)
+
+# f
+a = int(input("Podaj liczbę: "))
+if 1<= a<=10:
+    print('Przedział [1,10]')
+elif a>=17 and a<=21:
+    print('Przedział [17,21]')
+else:
+    print('Żaden z przedziałów')
+
+# g
+a = int(input("Podaj liczbę: "))
+if a%3==0 and a%5==0:
+    print('Liczba jest podzielna przez 3 i przez 5')
+elif a%3==0 and not a%5==0:
+    print('Liczba jest podzielna przez 3, ale nie przez 5')
+elif not a%3==0 and a%5==0:
+    print('Liczba jest podzielna przez 5, ale nie przez 3')
+elif not a%3==0 and not a%5==0:
+    print('Liczba nie jest podzielna przez 3 ani przez 5')
+
+# h
+a = int(input("Podaj liczbę a: "))
+b = int(input("Podaj liczbę b: "))
+z = str(input("Podaj znak : (+, −, ∗, :)"))
+if z=='+':
+    print(a+b)
+elif z == '-':
+    print(a - b)
+elif z == '*':
+    print(a * b)
+elif z == ':':
+    print(a / b)
+else:
+    print('Błędny znak')
+
+# i
+a = float(input("Podaj temperaturę: "))
+b = str(input("F czy C? -> "))
+if b=='C':
+    print((a*1.8)+32)
+elif b=='F':
+    print((a-32)/1.8)
+
+
+# j
+a = int(input("Podaj liczbę a: "))
+a=a*a
+b = int(input("Podaj liczbę b: "))
+b=b*b
+c = int(input("Podaj liczbę c: "))
+c=c*c
+if a>b and a>c:
+    if a==(b+c):
+        print('Liczby stanowią trojkę pitagorejska')
+    else:
+        print('To nie jest trojka pitagorejska.')
+elif b>a and b>c:
+    if b==(a+c):
+        print('Liczby stanowią trojkę pitagorejska')
+    else:
+        print('To nie jest trojka pitagorejska.')
+elif c>a and c>b:
+    if c==(b+a):
+        print('Liczby stanowią trojkę pitagorejska')
+    else:
+        print('To nie jest trojka pitagorejska.')
