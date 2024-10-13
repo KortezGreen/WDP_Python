@@ -1,5 +1,10 @@
 
 print('Cw1\n')
+# a
+print('Hello World!')
+# b
+imie = str(input('Podaj imię: '))
+print('Hello world, ',imie,'!', sep='')
 
 print('Cw2\n')
 var1 = 2
@@ -12,8 +17,9 @@ var4 = var1/var2
 print('Cw3\n')
 # a
 age = int(input("Wprowadz swoj wiek: "))
-if age >= 18:
-    print("Autoryzacja uzyskana"):
+if age>=18 and age<=100:
+    print("Autoryzacja uzyskana")
+else:
     print("Odmowa")
 
 # b
