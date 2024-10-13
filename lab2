@@ -110,3 +110,11 @@ elif c>a and c>b:
         print('Liczby stanowią trojkę pitagorejska')
     else:
         print('To nie jest trojka pitagorejska.')
+elif a==b and a==c:
+    print('To nie jest trojka pitagorejska.')
+elif (a>b or b<a) and b==c:
+    print('To nie jest trojka pitagorejska.')
+elif (b>a or b<a) and a==c:
+    print('To nie jest trojka pitagorejska.')
+elif (c>a or c<a) and a==b:
+    print('To nie jest trojka pitagorejska.')
