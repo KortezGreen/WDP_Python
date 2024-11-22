@@ -34,4 +34,37 @@ zamiana2 = napis[8] + napis[1:7] + ' ' + napis[0] + napis[9:]
 print(zamiana2)
 
 print('Cw3\n')
+#a
+def parz_str(a):
+    return a[0::2]
+ciag = 'abra kadabra'
+print(parz_str(ciag))
 
+#b
+def last_str(a):
+    return a[-1]
+print(last_str(ciag))
+
+#c
+def rev_str():
+    a = str(input("Podaj string: "))
+    return a[::-1]
+print(rev_str())
+
+#d
+def palindrom_str():
+    a = str(input("Podaj string: "))
+    b = a[::-1]
+    if a==b:
+        return "To palindrom!"
+    else:
+        return "To NIE palindrom!"
+print(palindrom_str())
+
+#e
+
+
+#f
+
+
+#g
